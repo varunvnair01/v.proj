@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUR CART</title>
+    <style>
+        body {
+            background-image: url('https://cdn.britannica.com/08/177308-050-94D9D6BE/Food-Pizza-Basil-Tomato.jpg'); 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fefefe;
+        }
+        header {
+            background-color: #333;
+            color: #b3b3b3;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #dbdbdb;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+        }
+        .categories {
+            flex: 1;
+            background-color: #8c8c8c;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .order {
+            flex: 2;
+            background-color: #aeaeae;
+            padding: 20px;
+            margin-left: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .menu-item label {
+            font-weight: bold;
+        }
+        .menu-item input {
+            width: 40px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Food Delivery</h1>
+    </header>
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="categories">
+            <h2>OUR SPECIAL</h2>
+            <ul>
+                <li>Burgers</li>
+                <li>Pizza</li>
+                <li>Biriyani</li>
+                <li>Fried Chicken</li>
+                <li>Cake</li>
+                <!-- Add more categories -->
+            </ul>
+        </div>
+        <div class="order">
+            <h2>Your Order</h2>
+            <form id="order-form">
+                <div class="menu-item">
+                    <label for="burger">Burger:</label>
+                    <input type="number" id="burger" name="burger" min="0" value="0">
+                </div>
+                <div class="menu-item">
+                    <label for="pizza">Pizza:</label>
+                    <input type="number" id="pizza" name="pizza" min="0" value="0">
+                </div>
+                <div class="menu-item">
+                    <label for="Cake">Cake:</label>
+                    <input type="number" id="Cake" name="Cake" min="0" value="0">
+                </div>
+                <div class="menu-item">
+                    <label for="Biriyani">Biriyani:</label>
+                    <input type="number" id="Biriyani" name="Biriyani" min="0" value="0">
+                </div>
+                <div class="menu-item">
+                    <label for="Fried Chicken">Fried Chicken:</label>
+                    <input type="number" id="Fried Chicken" name="Fried Chicken" min="0" value="0">
+                </div>
+                <!-- Additional menu items -->
+                <!--input type="submit" value="Place Order"-->
+                    <button onclick="geekAlert()">
+                        Place Order
+                    </button>
+                    <!--Alert box function-->
+                    <script>
+                      function geekAlert(){
+                        alert("Your order is placed");
+                      }    
+                    </script>
+            </form>
+        </div>
+    </div>
+    <footer>
+        &copy; Online Food Delivery System
+    </footer>
+</body>
+</html>
